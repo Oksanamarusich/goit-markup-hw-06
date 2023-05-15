@@ -413,10 +413,12 @@
                     </div>
                     <div class="footer-form">
                           <p class="footer-light-text">Subscribe</p>
-                    <form class="footer-subsribe-form" name="subscribe-form" autocomplete="on" novalidate>
-                        <label class="text-form" >
-                            E-mail
-                            <input class="footer-input" type="email" name="email">
+                    <form class="footer-subscribe-form" name="subscribe-form" autocomplete="on" novalidate>
+                       <div class="footer-subscribe">
+                          <label class="footer-subscribe-label">
+                           
+                            <input class="footer-input" type="email" name="email" required>
+                            <span class="text-form"> E-mail</span>
                         </label>
                         
                         <button class=" btn-form btn" type="submit">Subscribe
@@ -424,6 +426,8 @@
                               <use href="./images/icons.svg#plane"></use>
                             </svg>
                         </button>
+                       </div>
+                        
                     </form>
 
                     </div>
@@ -443,26 +447,47 @@
                           <use href="./images/icons.svg#close-icon"></use>
                         </svg>
                     </button>
-                    <p class="modal-text">Leave your contacts and we will call you back</p>
+                    <strong class="modal-title">Leave your contacts and we will call you back</strong>
                     <form class="modal-form" name="modal-form" autocomplete="off">
-                        <label class="small-text">
-                            Name
-                            <input class="modal-input" type="text" name="user_name">
-                        </label>
-                        <label class="small-text">
-                            Phone
-                            <input class="modal-input" type="text" name="phone">
-                        </label>
-                        <label class="small-text">
-                            Email
-                            <input class="modal-input" type="text" name="email">
-                        </label>
-                        <label class="small-text">
+                       
+                        <div class="form-wrapper">
+                            <label class="small-text" for="modal_name">
+                                Name
+                            </label>
+                            <input class="modal-input" type="text" name="modal_name" id="modal_name">
+                            <svg class="modal-icon" width="18" height="24">
+                              <use href="./images/icons.svg#person"></use>
+                            </svg>
+                        </div>
+                        
+                        <div class="form-wrapper">
+                            <label class="small-text" for="modal_phone">
+                              Phone
+                            </label>
+                             <input class="modal-input" type="text" name="modal_phone" id="modal_phone">
+                             <svg class="modal-icon" width="18" height="24">
+                               <use href="./images/icons.svg#phone"></use>
+                             </svg>
+                        </div>
+                        
+                        <div class="form-wrapper">
+                            <label class="small-text" for="modal_email">
+                              Email
+                            </label>
+                            <input class="modal-input" type="text" name="modal_email" id="modal_email">
+                            <svg class="modal-icon" width="18" height="24">
+                              <use href="./images/icons.svg#email"></use>
+                            </svg>
+                        </div>
+                        <label class="small-text" for="comment">
                             Comment
-                            <textarea class="modal-textarea" name="comment" placeholder="Text input" cols="30" rows="10"></textarea>
                         </label>
-                        <input type="checkbox">
-                        <label class="small-text" >I accept the terms and conditions of the <a href="">Privacy Policy</a> </label>
+                         <textarea class="modal-form-comment" name="comment" id="comment" placeholder="Text input" rows="10"></textarea>
+                        <label class="modal-agreement small-text ">
+                            <input class="modal-checkbox" type="checkbox">
+                            I accept the terms and conditions of the <a class="modal-link" href="">Privacy Policy</a> 
+                        </label>
+                         
                          <button class="btn" type="submit">Send</button>
                     </form>
                 </div>
